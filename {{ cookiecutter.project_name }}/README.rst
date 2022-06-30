@@ -1,5 +1,5 @@
-adafruit-bundle-toml-switcher
-=============================
+{{ cookiecutter.project_name }}
+{{ '=' * cookiecutter.project_name|length }}
 
 A script to convert the Adafruit Bundle from setup.py to pyproject.toml
 
