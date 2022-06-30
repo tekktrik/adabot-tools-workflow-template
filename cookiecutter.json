@@ -1,5 +1,6 @@
 {
     "project_name": null,
     "script_name": "{{ cookiecutter.project_name|replace(' ','_')|replace('-','_')|lower }}",
-    "author": null
+    "author": null,
+    "is_adafruit": "y"
 }
