@@ -4,10 +4,10 @@
 
 while read filename; do
     if [ "$1" == "install" ]; then
-        echo "Copying $filename to toml_switcher/"
-        ln  ./submodules/adabot/tools/$filename ./toml_switcher/$filename;
+        echo "Copying $filename to {{ cookiecutter.script_name }}/"
+        ln  ./submodules/adabot/tools/$filename ./{{ cookiecutter.script_name }}/$filename;
     elif [ "$1" == "clean" ]; then
-        echo "Deleting $filename in toml_switcher/"
-        rm ./toml_switcher/$filename;
+        echo "Deleting $filename in {{ cookiecutter.script_name }}/"
+        rm ./{{ cookiecutter.script_name }}/$filename;
     fi
 done < tools_reqs.txt
